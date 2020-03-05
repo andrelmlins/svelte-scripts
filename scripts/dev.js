@@ -4,4 +4,4 @@ process.on('unhandledRejection', err => {
   throw err;
 });
 
-console.log('TEST');
+console.log('DEV');
