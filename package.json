@@ -10,6 +10,7 @@
     "svelte-scripts": "index.js"
   },
   "dependencies": {
+    "rollup-plugin-serve": "^1.0.1",
     "svelte": "^3.19.2"
   },
   "devDependencies": {

@@ -10,17 +10,6 @@ const serve = require('rollup-plugin-serve');
 
 const production = !process.env.ROLLUP_WATCH;
 
-let running_dev_server = false;
-const writeBundle = () => {
-  if (!running_dev_server) {
-    running_dev_server = true;
-    child_process.spawn('npm', ['run', 'start:dev'], {
-      stdio: ['ignore', 'inherit', 'inherit'],
-      shell: true
-    });
-  }
-};
-
 module.exports = {
   input: 'src/main.js',
   plugins: [
@@ -34,7 +23,6 @@ module.exports = {
         importee === 'svelte' || importee.startsWith('svelte/')
     }),
     commonjs(),
-    !production && writeBundle,
     !production &&
       serve({
         open: true,
