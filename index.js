@@ -1,35 +1,35 @@
 #!/usr/bin/env node
 
-"use strict";
+'use strict';
 
-process.on("unhandledRejection", err => {
+process.on('unhandledRejection', err => {
   throw err;
 });
 
-const { spawnSync } = require("child_process");
+const { spawnSync } = require('child_process');
 
 const args = process.argv.slice(2);
-const scripts = ["start", "build", "test", "build-app"];
+const scripts = ['start', 'build', 'test', 'build-app'];
 
 if (args.length === 0) {
-  console.log("\x1b[31mEmpty script.");
+  console.log('\x1b[31mEmpty script.');
   process.exit(1);
 }
 
 const script = args[0];
 
-console.log(`\x1b[36m\nReact Dependency Scripts (${script})`, "\x1b[0m");
-console.log(`🚀 Version: ${require("./package.json").version}\n`);
+console.log(`\x1b[36m\nSvelte Scripts (${script})`, '\x1b[0m');
+console.log(`🚀 Version: ${require('./package.json').version}\n`);
 
 if (scripts.includes(script)) {
   const result = spawnSync(
-    "node",
+    'node',
     [`${__dirname}/scripts/${script}.js`, ...process.argv.slice(3)],
-    { stdio: "inherit" }
+    { stdio: 'inherit' }
   );
   process.exit(result.status);
 } else {
   console.log(`\x1b[31mUnknown script ${script}.\x1b[0m`);
-  console.log("See: http://github.com/andrelmlins/create-react-dependency");
+  console.log('See: http://github.com/andrelmlins/svelte-scripts');
   process.exit(1);
 }
