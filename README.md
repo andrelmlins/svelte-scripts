@@ -5,14 +5,14 @@
 ## Basic Use
 
 ```
-npx degit andrelmlins/template svelte-app
+npx degit andrelmlins/svelte-scripts/template svelte-app
 cd svelte-app
 yarn start
 ```
 
-### Scripts
+## Scripts
 
-## Start the development application
+### Start the development application
 
 Using [rollup](https://rollupjs.org/) with reference to folder `src`.
 
