@@ -35,7 +35,7 @@ const createConfig = production => ({
     sourcemap: true,
     format: 'iife',
     name: 'app',
-    file: 'public/bundle.js'
+    file: 'public/build/bundle.js'
   },
   watch: {
     clearScreen: false

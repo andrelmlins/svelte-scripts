@@ -1,11 +1,12 @@
 {
   "name": "svelte-scripts",
   "description": "Scripts of svelte applications",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "main": "index.js",
-  "author": "André Lins",
+  "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
   "license": "MIT",
   "private": false,
+  "homepage": "https://github.com/andrelmlins/svelte-scripts",
   "files": [
     "configs",
     "scripts",
@@ -13,6 +14,20 @@
   ],
   "bin": {
     "svelte-scripts": "index.js"
+  },
+  "keywords": [
+    "svelte",
+    "scripts",
+    "start",
+    "build",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrelmlins/svelte-scripts.git"
+  },
+  "peerDependencies": {
+    "svelte": "^3.0.0"
   },
   "dependencies": {
     "@babel/core": "^7.8.7",
