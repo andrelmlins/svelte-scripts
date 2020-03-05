@@ -1,5 +1,6 @@
 {
   "name": "svelte-scripts",
+  "description": "Scripts of svelte applications",
   "version": "0.0.1",
   "main": "index.js",
   "author": "André Lins",
