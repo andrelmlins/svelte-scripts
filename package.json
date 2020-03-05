@@ -1,0 +1,11 @@
+{
+  "name": "svelte-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "André Lins",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "svelte-scripts": "index.js"
+  }
+}
