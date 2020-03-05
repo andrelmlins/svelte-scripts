@@ -8,8 +8,9 @@ process.on('unhandledRejection', err => {
 const rollup = require('rollup');
 const rollupConfig = require('../configs/rollup.config');
 
+const watcher = rollup.watch(rollupConfig(false));
+
 let initializing = false;
-const watcher = rollup.watch(rollupConfig);
 
 watcher.on('event', event => {
   switch (event.code) {

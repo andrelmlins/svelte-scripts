@@ -1,6 +1,5 @@
 'use strict';
 
-const child_process = require('child_process');
 const svelte = require('rollup-plugin-svelte');
 const resolve = require('rollup-plugin-node-resolve');
 const commonjs = require('rollup-plugin-commonjs');
@@ -8,9 +7,7 @@ const livereload = require('rollup-plugin-livereload');
 const { terser } = require('rollup-plugin-terser');
 const serve = require('rollup-plugin-serve');
 
-const production = !process.env.ROLLUP_WATCH;
-
-module.exports = {
+const createConfig = production => ({
   input: 'src/main.js',
   plugins: [
     svelte({
@@ -43,4 +40,6 @@ module.exports = {
   watch: {
     clearScreen: false
   }
-};
+});
+
+module.exports = createConfig;
