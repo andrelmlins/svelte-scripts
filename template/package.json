@@ -1,0 +1,15 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "svelte-scripts build",
+    "start": "svelte-scripts start",
+    "test": "svelte-scripts test"
+  },
+  "devDependencies": {
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "svelte-scripts": "^0.0.4"
+  }
+}

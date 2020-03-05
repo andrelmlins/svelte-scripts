@@ -6,6 +6,11 @@
   "author": "André Lins",
   "license": "MIT",
   "private": false,
+  "files": [
+    "configs",
+    "scripts",
+    "index.js"
+  ],
   "bin": {
     "svelte-scripts": "index.js"
   },
@@ -21,7 +26,6 @@
     "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.2.0",
-    "svelte": "^3.19.2",
     "svelte-jester": "^1.0.5"
   }
 }
