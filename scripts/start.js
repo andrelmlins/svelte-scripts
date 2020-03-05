@@ -1,16 +1,33 @@
 'use strict';
 
+process.env.ROLLUP_WATCH = true;
+
 process.on('unhandledRejection', err => {
   throw err;
 });
-
 const rollup = require('rollup');
 const rollupConfig = require('../configs/rollup.config');
 
-const watcher = await rollup.watch(rollupConfig);
+let initializing = false;
+const watcher = rollup.watch(rollupConfig);
 
 watcher.on('event', event => {
-  console.log(event);
+  switch (event.code) {
+    case 'BUNDLE_START':
+      if (!initializing) {
+        console.log('Initializing application...');
+      } else {
+        console.log('Reinitializing application...');
+      }
+      initializing = true;
+      break;
+    case 'BUNDLE_END':
+      console.log('Initialized application');
+      break;
+    case 'ERROR':
+      console.log(event.error.Error);
+      break;
+    default:
+      break;
+  }
 });
-
-console.log('START');
