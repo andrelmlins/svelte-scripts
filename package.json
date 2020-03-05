@@ -10,15 +10,18 @@
     "svelte-scripts": "index.js"
   },
   "dependencies": {
-    "rollup-plugin-serve": "^1.0.1",
-    "svelte": "^3.19.2"
-  },
-  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0",
     "rollup": "^1.32.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-livereload": "^1.0.4",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-serve": "^1.0.1",
     "rollup-plugin-svelte": "^5.1.1",
-    "rollup-plugin-terser": "^5.2.0"
+    "rollup-plugin-terser": "^5.2.0",
+    "svelte": "^3.19.2",
+    "svelte-jester": "^1.0.5"
   }
 }
