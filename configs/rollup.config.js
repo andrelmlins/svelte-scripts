@@ -7,7 +7,7 @@ const livereload = require('rollup-plugin-livereload');
 const { terser } = require('rollup-plugin-terser');
 const serve = require('rollup-plugin-serve');
 
-const createConfig = production => ({
+const createConfig = (production, options = {}) => ({
   input: 'src/main.js',
   plugins: [
     svelte({
@@ -25,8 +25,8 @@ const createConfig = production => ({
         open: true,
         verbose: true,
         contentBase: 'public',
-        host: 'localhost',
-        port: 5000
+        host: options.host,
+        port: options.port
       }),
     !production && livereload('public'),
     production && terser()

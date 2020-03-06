@@ -1421,6 +1421,11 @@ chokidar@^2.1.5:
   optionalDependencies:
     fsevents "^1.2.7"
 
+choose-port@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/choose-port/-/choose-port-0.1.0.tgz#a0221d42121831bafbc1c8e82c9068b020ba611d"
+  integrity sha512-VoB6ZNRZJQ1EkwC7eo0eI8ENFJZ72FxOLu690X9q43eTVN+AXfZxsQKxpGEuhcpdq/VkSFXFoo2Ybj21KWE4cw==
+
 ci-info@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
@@ -4143,11 +4148,6 @@ svelte-jester@^1.0.5:
   integrity sha512-UVQNYXHw1ujoPjSVwKES9bT4LPaZlWulW3rRE0rFXnRDrWt58BpxQxpcixGBpIsE0y6D5QMiCoFoMQOSkar+zg==
   dependencies:
     cosmiconfig "^6.0.0"
-
-svelte@^3.19.2:
-  version "3.19.2"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.19.2.tgz#4b0169ee33b37399f08eb92163593a0a46c242c7"
-  integrity sha512-Jswg065u8R9QYcN0rdpTQSFIr0hFq7YUzcPpEY6ZpFSAWkJKZG9AJvHE1d8+NJDTfr7SzKrO6EYssYYkUmszpA==
 
 symbol-tree@^3.2.2:
   version "3.2.4"
