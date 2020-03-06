@@ -10,6 +10,6 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "svelte-scripts": "^0.1.5"
+    "svelte-scripts": "^0.2.0"
   }
 }
