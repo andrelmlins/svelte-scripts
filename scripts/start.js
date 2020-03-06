@@ -13,12 +13,13 @@ const rollupConfig = require('../configs/rollup.config');
 
 const PORT = process.env.PORT || 5000;
 const HOST = process.env.HOST || 'localhost';
+const HOST_LIVE_RELOAD = process.env.HOST_LIVE_RELOAD || '0.0.0.0';
 const PORT_LIVE_RELOAD = process.env.PORT_LIVE_RELOAD || 35729;
 
 let initializing = false;
 
 choosePort(PORT, HOST, portServeValid => {
-  choosePort(PORT_LIVE_RELOAD, HOST, portLiveReloadValid => {
+  choosePort(PORT_LIVE_RELOAD, HOST_LIVE_RELOAD, portLiveReloadValid => {
     const watcher = rollup.watch(
       rollupConfig(false, {
         portServe: portServeValid,
