@@ -1,6 +1,7 @@
 'use strict';
 
 process.env.ROLLUP_WATCH = false;
+process.env.NODE_ENV = 'production';
 
 process.on('unhandledRejection', err => {
   throw err;

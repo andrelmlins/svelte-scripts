@@ -1,10 +1,12 @@
 'use strict';
 
 process.env.ROLLUP_WATCH = true;
+process.env.NODE_ENV = 'development';
 
 process.on('unhandledRejection', err => {
   throw err;
 });
+
 const rollup = require('rollup');
 const rollupConfig = require('../configs/rollup.config');
 
