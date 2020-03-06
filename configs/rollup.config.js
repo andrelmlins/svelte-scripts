@@ -26,7 +26,7 @@ const createConfig = (production, options = {}) => ({
         verbose: true,
         contentBase: 'public',
         host: options.host,
-        port: options.port
+        port: options.portServe
       }),
     !production &&
       livereload({ watch: 'public', port: options.portLiveReload }),
