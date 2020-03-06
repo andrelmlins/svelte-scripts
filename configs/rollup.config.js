@@ -28,7 +28,8 @@ const createConfig = (production, options = {}) => ({
         host: options.host,
         port: options.port
       }),
-    !production && livereload('public'),
+    !production &&
+      livereload({ watch: 'public', port: options.portLiveReload }),
     production && terser()
   ],
   output: {
