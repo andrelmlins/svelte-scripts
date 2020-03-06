@@ -10,6 +10,7 @@ process.on('unhandledRejection', err => {
 const rollup = require('rollup');
 const choosePort = require('choose-port');
 const rollupConfig = require('../configs/rollup.config');
+const printLog = require('../utils/printLog');
 
 const PORT = process.env.PORT || 5000;
 const HOST = process.env.HOST || 'localhost';
@@ -32,14 +33,14 @@ choosePort(PORT, HOST, portServeValid => {
       switch (event.code) {
         case 'BUNDLE_START':
           if (!initializing) {
-            console.log('Initializing application...');
+            printLog('Initializing application...');
           } else {
-            console.log('Reinitializing application...');
+            printLog('Reinitializing application...');
           }
           initializing = true;
           break;
         case 'BUNDLE_END':
-          console.log('Initialized application');
+          printLog('Initialized application');
           break;
         case 'ERROR':
           console.log(event.error.Error);
