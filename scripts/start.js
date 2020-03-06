@@ -11,9 +11,9 @@ const rollup = require('rollup');
 const choosePort = require('choose-port');
 const rollupConfig = require('../configs/rollup.config');
 
-const PORT = process.env.PORT || 6001;
+const PORT = process.env.PORT || 5000;
 const HOST = process.env.HOST || 'localhost';
-const PORT_LIVE_RELOAD = process.env.PORT_LIVE_RELOAD || 35279;
+const PORT_LIVE_RELOAD = process.env.PORT_LIVE_RELOAD || 35729;
 
 let initializing = false;
 
