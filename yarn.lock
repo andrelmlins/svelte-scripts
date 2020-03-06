@@ -1421,10 +1421,12 @@ chokidar@^2.1.5:
   optionalDependencies:
     fsevents "^1.2.7"
 
-choose-port@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/choose-port/-/choose-port-0.1.0.tgz#a0221d42121831bafbc1c8e82c9068b020ba611d"
-  integrity sha512-VoB6ZNRZJQ1EkwC7eo0eI8ENFJZ72FxOLu690X9q43eTVN+AXfZxsQKxpGEuhcpdq/VkSFXFoo2Ybj21KWE4cw==
+choose-port@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/choose-port/-/choose-port-0.2.0.tgz#b21538585eafccd938c49fc36d8a556f10c80242"
+  integrity sha512-npCIt+AD85Mj8QKs1ZWkHM8SmsbD850GyAD5Nij172R5FJGIuPSj0rA7I0TTUKWID6PK6BWL2FCqGLvZwnS8sw==
+  dependencies:
+    deasync "^0.1.19"
 
 ci-info@^2.0.0:
   version "2.0.0"
@@ -1602,6 +1604,14 @@ data-urls@^1.1.0:
     abab "^2.0.0"
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
+
+deasync@^0.1.19:
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/deasync/-/deasync-0.1.19.tgz#e7ea89fcc9ad483367e8a48fe78f508ca86286e8"
+  integrity sha512-oh3MRktfnPlLysCPpBpKZZzb4cUC/p0aA3SyRGp15lN30juJBTo/CiD0d4fR+f1kBtUQoJj1NE9RPNWQ7BQ9Mg==
+  dependencies:
+    bindings "^1.5.0"
+    node-addon-api "^1.7.1"
 
 debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
@@ -3172,6 +3182,11 @@ nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
+
+node-addon-api@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/node-addon-api/-/node-addon-api-1.7.1.tgz#cf813cd69bb8d9100f6bdca6755fc268f54ac492"
+  integrity sha512-2+DuKodWvwRTrCfKOeR24KIc5unKjOh8mz17NCzVnHWfjAdDqbfbjqh7gUT+BkXBRQM52+xCHciKWonJ3CbJMQ==
 
 node-int64@^0.4.0:
   version "0.4.0"
