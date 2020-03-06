@@ -1,7 +1,7 @@
 {
   "name": "svelte-scripts",
   "description": "Configurations and scripts for svelte applications",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "index.js",
   "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
   "license": "MIT",
