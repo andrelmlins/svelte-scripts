@@ -54,6 +54,14 @@ yarn test
 2. Only dependency to start a project
 3. Quickly launch a svelte application
 
+## Environment Variables
+
+| Variable         | Type   | Default Value |
+| ---------------- | ------ | ------------- |
+| PORT             | number | 5000          |
+| HOST             | string | localhost     |
+| PORT_LIVE_RELOAD | number | 35729         |
+
 ## Contribution guidelines
 
 If you want to contribute to **Svelte Scripts**, be sure to review the
