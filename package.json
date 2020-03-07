@@ -10,6 +10,7 @@
   "files": [
     "configs",
     "scripts",
+    "utils",
     "index.js"
   ],
   "bin": {
