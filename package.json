@@ -13,7 +13,8 @@
     "index.js"
   ],
   "bin": {
-    "svelte-scripts": "index.js"
+    "svelte-scripts": "index.js",
+    "svelte-scripts-library": "index-library.js"
   },
   "keywords": [
     "svelte",
