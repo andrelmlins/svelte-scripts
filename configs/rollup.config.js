@@ -7,8 +7,8 @@ const livereload = require('rollup-plugin-livereload');
 const { terser } = require('rollup-plugin-terser');
 const serve = require('rollup-plugin-serve');
 
-const createConfig = (production, options = {}) => ({
-  input: 'src/main.js',
+const createConfig = (production, options = { input: 'src/main.js' }) => ({
+  input: options.input,
   plugins: [
     svelte({
       dev: !production,

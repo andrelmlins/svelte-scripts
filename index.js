@@ -2,6 +2,8 @@
 
 'use strict';
 
+process.env.SVELTE_SCRIPTS = 'app';
+
 process.on('unhandledRejection', err => {
   throw err;
 });
