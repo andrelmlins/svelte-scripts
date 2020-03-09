@@ -12,22 +12,24 @@ const rollupConfigLibrary = require('../configs/rollup-lib.config');
 const rollupConfigApp = require('../configs/rollup.config');
 const printLog = require('../utils/printLog');
 
-let config;
+let configs;
 
 if (process.env.SVELTE_SCRIPTS === 'app') {
-  config = rollupConfigApp(true);
+  configs = [rollupConfigApp(true)];
 } else {
-  config = rollupConfigLibrary();
+  configs = rollupConfigLibrary();
 }
 
 const build = async () => {
-  printLog('Building application...\n\n');
+  printLog('Building application...');
 
-  const bundle = await rollup.rollup(config);
+  configs.map(async config => {
+    const bundle = await rollup.rollup(config);
 
-  await bundle.write(config.output);
+    await bundle.write(config.output);
+  });
 
-  printLog('Built application...\n\n');
+  printLog('Built application...');
 };
 
 build();
