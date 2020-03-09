@@ -1,5 +1,7 @@
 # Svelte Scripts
 
+Configurations and scripts for svelte applications and svelte libraries
+
 [![npm version](https://badge.fury.io/js/svelte-scripts.svg)](https://www.npmjs.com/package/svelte-scripts) &bull; [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/svelte-scripts/blob/master/LICENSE) &bull; [![Build Status](https://travis-ci.com/andrelmlins/svelte-scripts.svg?branch=master)](https://travis-ci.com/andrelmlins/svelte-scripts) &bull; [![Dependencies](https://david-dm.org/andrelmlins/svelte-scripts.svg)](https://david-dm.org/andrelmlins/svelte-scripts)
 
 - Create svelte applications and libraries with zero settings.
@@ -8,7 +10,7 @@
 
 ## Basic Use
 
-### From Application
+### For Application
 
 Create your svelte application
 
@@ -20,7 +22,7 @@ yarn start
 
 Then open http://localhost:5000/ to see your app.
 
-### From Library
+### For Library
 
 Create your svelte library
 
