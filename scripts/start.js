@@ -23,6 +23,10 @@ choosePort(PORT, HOST, portServeValid => {
   choosePort(PORT_LIVE_RELOAD, HOST_LIVE_RELOAD, portLiveReloadValid => {
     const watcher = rollup.watch(
       rollupConfig(false, {
+        input:
+          process.env.SVELTE_SCRIPTS === 'app'
+            ? 'src/main.js'
+            : 'src/dev/main.js',
         portServe: portServeValid,
         host: HOST,
         portLiveReload: portLiveReloadValid

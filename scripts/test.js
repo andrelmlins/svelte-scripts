@@ -10,7 +10,13 @@ process.on('unhandledRejection', err => {
 
 const jest = require('jest');
 const fs = require('fs');
-let jestConfig = require('../configs/jest.config');
+const createJestConfig = require('../configs/createJestConfig');
+
+let jestConfig = createJestConfig(
+  process.env.SVELTE_SCRIPTS === 'app'
+    ? '<rootDir>/src/**/*.{js,jsx}'
+    : '<rootDir>/src/lib/**/*.{js,jsx}'
+);
 
 const packageJson = JSON.parse(fs.readFileSync('./package.json'));
 

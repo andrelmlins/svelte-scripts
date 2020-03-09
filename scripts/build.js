@@ -8,10 +8,17 @@ process.on('unhandledRejection', err => {
 });
 
 const rollup = require('rollup');
-const rollupConfig = require('../configs/rollup.config');
+const rollupConfigLibrary = require('../configs/rollup-lib.config');
+const rollupConfigApp = require('../configs/rollup.config');
 const printLog = require('../utils/printLog');
 
-const config = rollupConfig(true);
+let config;
+
+if (process.env.SVELTE_SCRIPTS === 'app') {
+  config = rollupConfigApp(true);
+} else {
+  config = rollupConfigLibrary();
+}
 
 const build = async () => {
   printLog('Building application...\n\n');
