@@ -1,0 +1,15 @@
+{
+  "name": "svelte-library",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "svelte-library-scripts build",
+    "start": "svelte-library-scripts start",
+    "test": "svelte-library-scripts test"
+  },
+  "devDependencies": {
+    "svelte": "^3.0.0"
+  },
+  "dependencies": {
+    "svelte-scripts": "^0.3.0"
+  }
+}
