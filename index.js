@@ -2,8 +2,6 @@
 
 'use strict';
 
-process.env.SVELTE_SCRIPTS = 'app';
-
 process.on('unhandledRejection', err => {
   throw err;
 });
@@ -20,13 +18,18 @@ if (args.length === 0) {
 
 const script = args[0];
 
+if (args[1].includes('--library')) {
+  process.env.SVELTE_SCRIPTS =
+    args[1].split('=')[1] === 'true' ? 'library' : 'app';
+}
+
 console.log(`\x1b[36m\nSvelte Scripts (${script})`, '\x1b[0m');
 console.log(`🚀 Version: ${require('./package.json').version}\n`);
 
 if (scripts.includes(script)) {
   const result = spawnSync(
     'node',
-    [`${__dirname}/scripts/${script}.js`, ...process.argv.slice(3)],
+    [`${__dirname}/scripts/${script}.js`, ...process.argv.slice(4)],
     { stdio: 'inherit' }
   );
   process.exit(result.status);

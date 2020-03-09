@@ -14,8 +14,8 @@
     "index.js"
   ],
   "bin": {
-    "svelte-scripts": "index.js",
-    "svelte-scripts-library": "index-library.js"
+    "svelte-scripts": "index.js --library=false",
+    "svelte-scripts-library": "index.js --library=true"
   },
   "keywords": [
     "svelte",
