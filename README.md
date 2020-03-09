@@ -6,7 +6,9 @@
 - Configurations and scripts for svelte applications.
 - Works on the most used operating systems.
 
-## Basic Use
+## Basic Use from
+
+### From Application
 
 ```
 npx degit andrelmlins/svelte-scripts/template svelte-app
@@ -15,6 +17,16 @@ yarn start
 ```
 
 Then open http://localhost:5000/ to see your app.
+
+### From Library
+
+```
+npx degit andrelmlins/svelte-scripts/template-library svelte-library
+cd svelte-library
+yarn start
+```
+
+Then open http://localhost:5000/ to see your library.
 
 ## Scripts
 
