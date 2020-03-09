@@ -1,7 +1,7 @@
 {
   "name": "svelte-scripts",
   "description": "Configurations and scripts for svelte applications and svelte libraries",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "main": "index.js",
   "author": "André Lins <andrelucas01@hotmail.com> (https://andrelmlins.github.io/)",
   "license": "MIT",
@@ -14,8 +14,8 @@
     "index.js"
   ],
   "bin": {
-    "svelte-scripts": "index.js --library=false",
-    "svelte-scripts-library": "index.js --library=true"
+    "svelte-scripts": "index.js",
+    "svelte-scripts-library": "index-library.js"
   },
   "keywords": [
     "svelte",
