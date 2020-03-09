@@ -2,9 +2,9 @@
   "name": "svelte-library",
   "version": "1.0.0",
   "scripts": {
-    "build": "svelte-library-scripts build",
-    "start": "svelte-library-scripts start",
-    "test": "svelte-library-scripts test"
+    "build": "svelte-scripts-library build",
+    "start": "svelte-scripts-library start",
+    "test": "svelte-scripts-library test"
   },
   "devDependencies": {
     "svelte": "^3.0.0"
