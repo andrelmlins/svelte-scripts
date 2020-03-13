@@ -17,7 +17,13 @@ let configs;
 if (process.env.SVELTE_SCRIPTS === 'app') {
   configs = [rollupConfigApp(true)];
 } else {
-  configs = rollupConfigLibrary();
+  configs = [
+    ...rollupConfigLibrary(),
+    rollupConfigApp(true),
+    {
+      input: 'src/dev/main.js'
+    }
+  ];
 }
 
 const build = async () => {
