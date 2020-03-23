@@ -47,7 +47,7 @@ choosePort(PORT, HOST, portServeValid => {
           printLog('Initialized application');
           break;
         case 'ERROR':
-          console.log(event.error.Error);
+          console.error(event.error.stack);
           break;
         default:
           break;
