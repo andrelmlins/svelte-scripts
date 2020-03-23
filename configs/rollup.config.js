@@ -12,7 +12,7 @@ const createConfig = (production, options = { input: 'src/main.js' }) => ({
   plugins: [
     svelte({
       dev: !production,
-      css: css => css.write('public/bundle.css')
+      css: css => css.write('public/build/bundle.css')
     }),
     resolve({
       browser: true,
